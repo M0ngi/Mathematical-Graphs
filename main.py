@@ -49,7 +49,6 @@ def g(z, q, phi, delta):
   return 8*(q/PI + ( POW(h_value, 2) - 1 - phi/2 ) ) / POW(h_value, 4)
   
 
-# Cette fonction calcule la force de frottement externe
 def Dp(q, phi, delta):
   """
     Integral of G(z), from 0 to 1
@@ -70,7 +69,6 @@ def f0(z, q, phi, delta):
   return PI * POW(h_value, 2) * g(z, q, phi, delta)
 
 
-# Cette fonction calcule la force de frottement interne
 def F0(q, phi, delta):
   """
     Integral of f0(z) from 0 to 1
@@ -91,7 +89,6 @@ def fi(z, q, phi, delta):
   return 0
 
 
-# Cette fonction calcule la perte de charge
 def Fi(q, phi, delta):
   """
     Integral of fi(z) from 0 to 1
